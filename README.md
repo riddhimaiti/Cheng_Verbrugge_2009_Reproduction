@@ -10,7 +10,7 @@ We solve for the concentration profile $C(r,t)$ inside a sphere of radius $R$ un
 
 ### 1.1 Governing PDE — Fick's Second Law in Spherical Coordinates
 
-$$\frac{\partial C}{\partial t} = \frac{D}{r^2}\frac{\partial}{\partial r}\left(r^2 \frac{\partial C}{\partial r}\right) \tag{1}$$
+$$\frac{\partial C}{\partial t}=\frac{D}{r^2}\frac{\partial}{\partial r}\left(r^2 \frac{\partial C}{\partial r}\right) \tag{1}$$
 
 where $D$ is the diffusion coefficient (constant), $r$ is the radial coordinate, and $C(r,t)$ is the solute concentration.
 
