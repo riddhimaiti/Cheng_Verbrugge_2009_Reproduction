@@ -70,10 +70,17 @@ The Crank-Nicolson FDM solution matches the analytical series solution (Eq. 11 o
 $$\frac{\partial c}{\partial \tau} = \frac{1}{x^2}\frac{\partial}{\partial x}\left(x^2 \frac{\partial c}{\partial x}\right) = \frac{\partial^2 c}{\partial x^2} + \frac{2}{x}\frac{\partial c}{\partial x}$$
 
 ### Boundary Conditions
+
 | Condition | Center ($x=0$) | Surface ($x=1$) |
 |-----------|----------------|-----------------|
-| **Potentiostatic** | $\partial c/\partial x = 0$ (symmetry) | $c = 1$ |
-| **Galvanostatic** | $\partial c/\partial x = 0$ (symmetry) | $\partial c/\partial x = 1$ |
+| **Potentiostatic** | $\partial c/\partial x = 0$ — **Neumann** (symmetry) | $c = 1$ — **Dirichlet** (fixed concentration) |
+| **Galvanostatic** | $\partial c/\partial x = 0$ — **Neumann** (symmetry) | $\partial c/\partial x = 1$ — **Neumann** (fixed flux) |
+
+> **Dirichlet BC** prescribes the *value* of the unknown ($c = \text{const}$).
+> Used at the surface for potentiostatic control, where the electrode voltage fixes the surface concentration.
+>
+> **Neumann BC** prescribes the *derivative* (flux) of the unknown ($\partial c/\partial x = \text{const}$).
+> Used at the center (zero flux by symmetry) and at the surface for galvanostatic control, where the applied current fixes the surface flux via $D\,\partial C/\partial r|_{r=R} = I/F$.
 
 ### Stress Formulas (Paper Eq. 3)
 Normalized by $E\Omega\Delta c / [3(1-\nu)]$:
