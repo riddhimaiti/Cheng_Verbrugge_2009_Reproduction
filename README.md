@@ -40,19 +40,6 @@ Unlike the potentiostatic case, strain energy increases monotonically to a finit
   <img src="fig4_strain_energy_galvanostatic.png" width="65%"/>
 </p>
 
-### Validation: FDM vs Analytical Solution
-The Crank-Nicolson FDM solution matches the analytical series solution (Eq. 11 of the paper) to $O(10^{-5})$.
-
-<p align="center">
-  <img src="fig_validation.png" width="65%"/>
-</p>
-
-| $\tau$ | Max Absolute Error |
-|--------|-------------------|
-| 0.02   | 9.47 × 10⁻⁵      |
-| 0.10   | 3.02 × 10⁻⁵      |
-| 0.50   | 2.05 × 10⁻⁶      |
-
 ## Verified Against Paper Predictions
 
 | Paper Equation | Prediction | FDM Result |
@@ -95,22 +82,6 @@ where $\bar{c}(x) = (3/x^3)\int_0^x x'^2 c(x') dx'$ is the volume-averaged conce
 - **L'Hôpital's rule** at $x = 0$ to handle the coordinate singularity
 - **Ghost-point method** for Neumann BC (galvanostatic surface flux)
 
-## Repository Structure
-
-```
-├── Cheng_Verbrugge_2009_Reproduction.ipynb   # Main notebook (executed, with plots)
-├── FDM_Derivation_Document.md                # Full mathematical derivation
-├── FDM_Derivation_Document.pdf               # PDF version of derivation
-├── fig1_potentiostatic.png                   # Figure 1 output
-├── fig2_strain_energy_potentiostatic.png     # Figure 2 output
-├── fig3_galvanostatic.png                    # Figure 3 output
-├── fig4_strain_energy_galvanostatic.png      # Figure 4 output
-├── fig_validation.png                        # FDM vs analytical validation
-├── build_notebook_v2.py                      # Notebook generator script
-├── generate_pdf.py                           # PDF derivation generator
-└── README.md                                 # This file
-```
-
 ## Requirements
 
 - Python 3.8+
@@ -122,34 +93,13 @@ where $\bar{c}(x) = (3/x^3)\int_0^x x'^2 c(x') dx'$ is the volume-averaged conce
 pip install numpy matplotlib jupyter
 ```
 
-## Usage
-
-### Run the notebook
-```bash
-jupyter notebook Cheng_Verbrugge_2009_Reproduction.ipynb
-```
-
-### Execute from command line
-```bash
-jupyter nbconvert --to notebook --execute Cheng_Verbrugge_2009_Reproduction.ipynb
-```
-
-### Regenerate the notebook
-```bash
-python build_notebook_v2.py
-```
-
 ## References
 
 1. **Y.-T. Cheng, M.W. Verbrugge**, "Evolution of stress within a spherical insertion electrode particle under potentiostatic and galvanostatic operation," *J. Power Sources* **190** (2009) 453–460. [DOI: 10.1016/j.jpowsour.2009.01.021](https://doi.org/10.1016/j.jpowsour.2009.01.021)
 
-2. **H.S. Carslaw, J.C. Jaeger**, *Conduction of Heat in Solids*, 2nd ed., Clarendon Press, Oxford, 1959. — Analytical solutions for diffusion in a sphere (Eqs. 11, 20 of the paper).
+2. **R.J. LeVeque**, *Finite Difference Methods for Ordinary and Partial Differential Equations*, SIAM, 2007. — Crank-Nicolson scheme theory and stability analysis.
 
-3. **S.P. Timoshenko, J.N. Goodier**, *Theory of Elasticity*, 3rd ed., McGraw-Hill, 1970. — Stress and strain energy formulations for elastic spheres.
-
-4. **R.J. LeVeque**, *Finite Difference Methods for Ordinary and Partial Differential Equations*, SIAM, 2007. — Crank-Nicolson scheme theory and stability analysis.
-
-5. **J. Crank**, *The Mathematics of Diffusion*, 2nd ed., Clarendon Press, Oxford, 1975. — Finite difference methods for diffusion problems.
+3. **J. Crank**, *The Mathematics of Diffusion*, 2nd ed., Clarendon Press, Oxford, 1975. — Finite difference methods for diffusion problems.
 
 ## License
 
