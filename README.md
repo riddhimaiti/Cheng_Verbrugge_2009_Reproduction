@@ -95,11 +95,10 @@ pip install numpy matplotlib jupyter
 
 ## References
 
-1. **Y.-T. Cheng, M.W. Verbrugge**, "Evolution of stress within a spherical insertion electrode particle under potentiostatic and galvanostatic operation," *J. Power Sources* **190** (2009) 453–460. [DOI: 10.1016/j.jpowsour.2009.01.021](https://doi.org/10.1016/j.jpowsour.2009.01.021)
+1. **Y.-T. Cheng, M.W. Verbrugge**, "Evolution of stress within a spherical insertion electrode particle under potentiostatic and galvanostatic operation," *J. Power Sources* **190** (2009) 453–460: https://doi.org/10.1016/j.jpowsour.2009.01.021
 
-2. **R.J. LeVeque**, *Finite Difference Methods for Ordinary and Partial Differential Equations*, SIAM, 2007. — Crank-Nicolson scheme theory and stability analysis.
-
-3. **J. Crank**, *The Mathematics of Diffusion*, 2nd ed., Clarendon Press, Oxford, 1975. — Finite difference methods for diffusion problems.
+2. Class Notes on **ECEG-6201 Analytical & Computational Methods by Murad Ridwan** from Addis Ababa University: http://ndl.ethernet.edu.et/bitstream/123456789/87841/6/chapter4.pdf
+3. **Crank-Nikolson method (Wikipedia)**: https://en.wikipedia.org/wiki/Crank-Nicolson_method
 
 ## License
 
