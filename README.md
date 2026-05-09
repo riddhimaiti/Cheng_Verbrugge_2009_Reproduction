@@ -1,6 +1,6 @@
 # Diffusion-Induced Stresses in Spherical Electrode Particles
 
-Numerical reproduction of **Cheng & Verbrugge (2009)** — *"Evolution of stress within a spherical insertion electrode particle under potentiostatic and galvanostatic operation"*, Journal of Power Sources **190**, 453–460.
+Numerical reproduction of **Cheng & Verbrugge (2009)** : *"Evolution of stress within a spherical insertion electrode particle under potentiostatic and galvanostatic operation"*, Journal of Power Sources **190**, 453–460.
 
 ---
 
@@ -12,28 +12,28 @@ Both **potentiostatic** (constant surface concentration) and **galvanostatic** (
 
 ## Key Results
 
-### Figure 1 — Potentiostatic: Concentration & Stress Profiles
+### Potentiostatic: Concentration & Stress Profiles
 Concentration increases with time from the surface inward. Radial stress is tensile at the center and zero at the surface. Tangential stress is compressive at the surface (max at $t = 0$) and tensile at the center. Stresses peak transiently then decay.
 
 <p align="center">
   <img src="fig1_potentiostatic.png" width="85%"/>
 </p>
 
-### Figure 2 — Potentiostatic: Strain Energy vs Time
+### Potentiostatic: Strain Energy vs Time
 Total dimensionless strain energy peaks early then decays to zero as concentration equilibrates. Lower Poisson ratios produce higher strain energy.
 
 <p align="center">
   <img src="fig2_strain_energy_potentiostatic.png" width="65%"/>
 </p>
 
-### Figure 3 — Galvanostatic: Concentration & Stress Profiles
+### Galvanostatic: Concentration & Stress Profiles
 Under constant flux, stresses increase monotonically and approach a steady-state given by Eqs. 25–26 of the paper (shown as dashed lines). This is fundamentally different from the potentiostatic case.
 
 <p align="center">
   <img src="fig3_galvanostatic.png" width="85%"/>
 </p>
 
-### Figure 4 — Galvanostatic: Strain Energy vs Time
+### Galvanostatic: Strain Energy vs Time
 Unlike the potentiostatic case, strain energy increases monotonically to a finite steady-state value.
 
 <p align="center">
