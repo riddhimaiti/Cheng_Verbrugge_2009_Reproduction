@@ -60,8 +60,8 @@ $$\frac{\partial c}{\partial \tau} = \frac{1}{x^2}\frac{\partial}{\partial x}\le
 
 | Condition | Center ($x=0$) | Surface ($x=1$) |
 |-----------|----------------|-----------------|
-| **Potentiostatic** | $\partial c/\partial x = 0$ — **Neumann** (symmetry) | $c = 1$ — **Dirichlet** (fixed concentration) |
-| **Galvanostatic** | $\partial c/\partial x = 0$ — **Neumann** (symmetry) | $\partial c/\partial x = 1$ — **Neumann** (fixed flux) |
+| **Potentiostatic** | $\partial c/\partial x = 0$ -> **Neumann** (symmetry) | $c = 1$ -> **Dirichlet** (fixed concentration) |
+| **Galvanostatic** | $\partial c/\partial x = 0$ -> **Neumann** (symmetry) | $\partial c/\partial x = 1$ -> **Neumann** (fixed flux) |
 
 > **Dirichlet BC** prescribes the *value* of the unknown ($c = \text{const}$).
 > Used at the surface for potentiostatic control, where the electrode voltage fixes the surface concentration.
@@ -95,10 +95,10 @@ pip install numpy matplotlib jupyter
 
 ## References
 
-1. **Y.-T. Cheng, M.W. Verbrugge**, "Evolution of stress within a spherical insertion electrode particle under potentiostatic and galvanostatic operation," *J. Power Sources* **190** (2009) 453–460: https://doi.org/10.1016/j.jpowsour.2009.01.021
+1. **Y.-T. Cheng, M.W. Verbrugge**, "Evolution of stress within a spherical insertion electrode particle under potentiostatic and galvanostatic operation," *J. Power Sources* **190** (2009) 453-460: https://doi.org/10.1016/j.jpowsour.2009.01.021
 
 2. Class Notes on **ECEG-6201 Analytical & Computational Methods by Murad Ridwan** from Addis Ababa University: http://ndl.ethernet.edu.et/bitstream/123456789/87841/6/chapter4.pdf
-3. **Crank-Nikolson method (Wikipedia)**: https://en.wikipedia.org/wiki/Crank-Nicolson_method
+3. **Crank-Nicolson method (Wikipedia)**: https://en.wikipedia.org/wiki/Crank-Nicolson_method
 
 ## License
 
