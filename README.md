@@ -2,8 +2,6 @@
 
 Numerical reproduction of **Cheng & Verbrugge (2009)** : *"Evolution of stress within a spherical insertion electrode particle under potentiostatic and galvanostatic operation"*, Journal of Power Sources **190**, 453–460.
 
----
-
 ## Overview
 
 This project solves the solid-state diffusion equation inside a spherical insertion electrode particle using the **Finite Difference Method (FDM)** with a **Crank-Nicolson** scheme, then computes the resulting diffusion-induced **radial**, **tangential**, and **shear stresses**, as well as the **total elastic strain energy**.
