@@ -14,38 +14,29 @@ Both **potentiostatic** (constant surface concentration) and **galvanostatic** (
 Concentration increases with time from the surface inward. Radial stress is tensile at the center and zero at the surface. Tangential stress is compressive at the surface (max at $t = 0$) and tensile at the center. Stresses peak transiently then decay.
 
 <p align="center">
-  <img src="fig1_potentiostatic.png" width="85%"/>
+  <img src="fig1.png" width="85%"/>
 </p>
 
 ### Potentiostatic: Strain Energy vs Time
 Total dimensionless strain energy peaks early then decays to zero as concentration equilibrates. Lower Poisson ratios produce higher strain energy.
 
 <p align="center">
-  <img src="fig2_strain_energy_potentiostatic.png" width="65%"/>
+  <img src="fig2.png" width="65%"/>
 </p>
 
 ### Galvanostatic: Concentration & Stress Profiles
 Under constant flux, stresses increase monotonically and approach a steady-state given by Eqs. 25–26 of the paper (shown as dashed lines). This is fundamentally different from the potentiostatic case.
 
 <p align="center">
-  <img src="fig3_galvanostatic.png" width="85%"/>
+  <img src="fig3.png" width="85%"/>
 </p>
 
 ### Galvanostatic: Strain Energy vs Time
 Unlike the potentiostatic case, strain energy increases monotonically to a finite steady-state value.
 
 <p align="center">
-  <img src="fig4_strain_energy_galvanostatic.png" width="65%"/>
+  <img src="fig4.png" width="65%"/>
 </p>
-
-## Verified Against Paper Predictions
-
-| Paper Equation | Prediction | FDM Result |
-|----------------|-----------|------------|
-| Eq. 16: Max $\tilde{\sigma}_r$ at center | ≈ 0.4 at $\tau$ = 0.0574 | **0.3856 at $\tau$ = 0.0574** |
-| Eq. 17: $\tilde{\sigma}_\theta$ at surface ($t \to 0$) | −1.0 | **−0.9894** |
-| Eq. 25: Galvanostatic steady-state $\tilde{\sigma}_r(0)$ | 0.2 | **0.2001** |
-| Eq. 26: Galvanostatic steady-state $\tilde{\sigma}_\theta(1)$ | −0.2 | **−0.1999** |
 
 ## Mathematical Formulation
 
