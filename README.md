@@ -8,7 +8,7 @@ This project solves the solid-state diffusion equation inside a spherical insert
 
 Both **potentiostatic** (constant surface concentration) and **galvanostatic** (constant surface flux) boundary conditions are implemented, reproducing **Figures 1–4** from the original paper.
 
-## Key Results
+## Results
 
 ### Potentiostatic: Concentration & Stress Profiles
 Concentration increases with time from the surface inward. Radial stress is tensile at the center and zero at the surface. Tangential stress is compressive at the surface (max at $t = 0$) and tensile at the center. Stresses peak transiently then decay.
@@ -51,12 +51,6 @@ $$\frac{\partial c}{\partial \tau} = \frac{1}{x^2}\frac{\partial}{\partial x}\le
 |-----------|----------------|-----------------|
 | **Potentiostatic** | $\partial c/\partial x = 0$ -> **Neumann** (symmetry) | $c = 1$ -> **Dirichlet** (fixed concentration) |
 | **Galvanostatic** | $\partial c/\partial x = 0$ -> **Neumann** (symmetry) | $\partial c/\partial x = 1$ -> **Neumann** (fixed flux) |
-
-> **Dirichlet BC** prescribes the *value* of the unknown ($c = \text{const}$).
-> Used at the surface for potentiostatic control, where the electrode voltage fixes the surface concentration.
->
-> **Neumann BC** prescribes the *derivative* (flux) of the unknown ($\partial c/\partial x = \text{const}$).
-> Used at the center (zero flux by symmetry) and at the surface for galvanostatic control, where the applied current fixes the surface flux via $D\,\partial C/\partial r|_{r=R} = I/F$.
 
 ### Stress Formulas (Paper Eq. 3)
 Normalized by $E\Omega\Delta c / [3(1-\nu)]$:
