@@ -81,7 +81,8 @@ pip install numpy matplotlib jupyter
 1. **Y.-T. Cheng, M.W. Verbrugge**, "Evolution of stress within a spherical insertion electrode particle under potentiostatic and galvanostatic operation," *J. Power Sources* **190** (2009) 453-460: https://doi.org/10.1016/j.jpowsour.2009.01.021
 
 2. Class Notes on **ECEG-6201 Analytical & Computational Methods by Murad Ridwan** from Addis Ababa University: http://ndl.ethernet.edu.et/bitstream/123456789/87841/6/chapter4.pdf
-3. **Crank-Nicolson method (Wikipedia)**: https://en.wikipedia.org/wiki/Crank-Nicolson_method
+
+3. **Finite Diﬀ erence Computing with PDEs by Hans Petter Langtangen and Svein Linge**: https://link.springer.com/book/10.1007/978-3-319-55456-3
 
 ## License
 
